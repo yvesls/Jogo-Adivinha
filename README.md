@@ -13,7 +13,7 @@ Um jogo cujo objetivo é adivinhar o número sortido.
   <a href="#-requisitos-e-recomendações">Requisitos e recomendações</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-<p align="center"><img width="30%" height="30%" src="img/combologo.png"></img></p>
+<p align="center"><img width="30%" height="30%" src="imagens/combologo.png"></img></p>
 
 # 💻 Sobre o projeto 
 
