@@ -5,15 +5,13 @@ geraNumero = Math.round(geraNumero); // arredonda número
 // bg.style.background = 'url(imagens/bgadvinha.jpg)';
 // bg.style.width = '100%';
 //bg.style.backgroundColor = 'rgba(2, 2, 2, 0.756);';
-
-
-
-
-
 var chute;
 var arrayChutes = [];
 var incluir = [];
 var x = 1;
+
+let trilha = document.getElementById("myaudio"); 
+trilha.volume = 0.05;
 
 // chamando a função turnoExibe ao clicar em enter
 function clickEnter(event){
@@ -28,13 +26,12 @@ for(var i = 0; i < clickChute.length; i++){
     clickChute[i].addEventListener('click', turnoExibe);
 }
 
+
+
 let imgAnimacao = document.getElementById('insereTexto'); 
 // função exibe turno e testa valor
 function turnoExibe(){
-    let trilha = document.getElementById("myaudio"); 
     trilha.play();
-    trilha.volume = 0.05;
-
     chute = document.getElementById('numChute').value;
     if(chute == ''){
         chute = 0;
@@ -85,7 +82,7 @@ function turnoExibe(){
     if(chute == geraNumero){
         let vitoria = document.getElementById('audio2');
         vitoria.play();
-        vitoria.volume = 0.5;
+        vitoria.volume = 0.1;
         trilha.pause();
 
         
@@ -118,7 +115,7 @@ function turnoExibe(){
         }
         let derrota = document.getElementById('audio3');
         derrota.play();
-        derrota.volume = 0.5;
+        derrota.volume = 0.1;
         trilha.pause();
         $('#modalRegistraDespesa').modal('show')// 6
         
